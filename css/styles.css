@@ -1,0 +1,268 @@
+
+
+/*=====ЗАГАЛЬНІ=====*/
+
+:root { 
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --logo-color: #000000;
+    --accent-color: #2196F3;
+    --secondary-accent-color: #ffffff;
+    --hover-button-color: #188CE8;
+    --primary-background-color: #E5E5E5;
+    --accent-background-color: #2F303A;
+    --accent-section-color: #F5F4FA;
+    --text-footer-color: rgba(255, 255, 255, 0.6);
+    --border-bottom-color: #ECECEC;  
+    --primary-text-family: Roboto, sans-serif;
+    --accent-text-family: Raleway, sans-serif;
+}
+
+body {
+    font-family: var(--primary-text-family);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.characteristic .title,
+.essential .title,
+.team .title,
+.team .people,
+.example .subtitle {
+    color: var(--title-text-color);
+    font-weight: 700;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+
+
+ /*=====ШАПКА=====*/
+
+.header {
+    background: var(--secondary-accent-color);
+    border-bottom: 1px solid var(--border-bottom-color);
+
+}
+
+.logo {
+    font-family: var(--accent-text-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.accent {
+    color: var(--accent-color); 
+}
+
+.text {
+    color: var(--logo-color);  
+}
+
+.site-nav,
+.contacts {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+    color: var(--title-text-color);  
+}
+
+.contacts .contacts-link {
+    color: inherit;
+}
+
+.site-nav .link.current,
+.site-nav .site-nav-link:hover,
+.site-nav .site-nav-link:focus,
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
+    color: var(--accent-color);
+}
+
+
+
+/*=====ПЕРША СЕКЦІЯ ГЕРОЯ=====*/
+
+.hero {
+    width: 1600px;
+    height: 600px;
+    background-color: var(--accent-background-color);
+}
+
+.hero .main {
+    width: 696px;
+    height: 120px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--secondary-accent-color);
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+.hero .button {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    color: var(--secondary-accent-color);
+    font-family: var(--primary-text-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    font-weight: 700;
+    line-height: 1.88;
+    cursor: pointer;
+ }
+
+ .hero .button:hover,
+ .hero .button:focus {
+    background-color: var(--hover-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ }
+
+
+ /*=====ДРУГА СЕКЦІЯ ХАРАКТЕРИСТИКИ=====*/
+
+.characteristic .title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.characteristic .point {
+    line-height: 1.71;
+}
+
+
+
+/*=====ТРЕТЯ СЕКЦІЯ ДІЯЛЬНІСТЬ=====*/
+   
+.essential .title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+
+/*=====ЧЕТВЕРТА СЕКЦІЯ КОМАНДА=====*/
+
+.team {
+    background: var(--accent-section-color);
+}
+
+.team .title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team .people {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team .texts {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+
+ /*=====ПІДВАЛ САЙТУ=====*/
+
+.footer {
+    background-color: var(--accent-background-color);
+}
+
+.footer .text {
+    color: var(--secondary-accent-color);
+}
+
+.footer .address {  
+    line-height: 1.71;
+}
+
+.footer .fact {
+    color: var(--secondary-accent-color);
+    text-decoration: none;
+    font-style: normal;
+
+}
+
+.footer .mail,
+.footer .tel {
+    color: var(--text-footer-color);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.footer .mail:hover,
+.footer .mail:focus,
+.footer .tel:hover,
+.footer .tel:focus {
+    color: var(--accent-color);
+}
+ 
+
+
+/*=====ПОРТФОЛІО=====*/
+
+.portfolio .buttons {
+    display: flex;
+    text-align: center; 
+} 
+
+.buttons .port-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63; 
+    background-color: var(--accent-section-color);
+    border-radius: 4px;
+    border: 0;
+    height: 38px;
+    cursor: pointer;
+}
+
+.buttons .port-btn:hover,
+.buttons .port-btn:focus {
+    background: var(--accent-color);
+    color: var(--secondary-accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.example .subtitle {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.example .lists {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
