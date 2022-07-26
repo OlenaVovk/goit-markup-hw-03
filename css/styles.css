@@ -2,6 +2,12 @@
 
 /*=====ЗАГАЛЬНІ=====*/
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root { 
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -40,20 +46,31 @@ body {
 .example .subtitle {
     color: var(--title-text-color);
     font-weight: 700;
+    margin-top: 0;
 }
 
 .invisible {
     opacity: 0;
+    margin-top: 0;
 }
 
 
 
  /*=====ШАПКА=====*/
 
+
 .header {
     background: var(--secondary-accent-color);
     border-bottom: 1px solid var(--border-bottom-color);
 
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
 }
 
 .logo {
@@ -99,8 +116,6 @@ body {
 /*=====ПЕРША СЕКЦІЯ ГЕРОЯ=====*/
 
 .hero {
-    width: 1600px;
-    height: 600px;
     background-color: var(--accent-background-color);
 }
 
@@ -113,7 +128,7 @@ body {
     text-align: center;
     color: var(--secondary-accent-color);
     text-transform: uppercase; 
-    text-align: center;
+    margin-top: 0;
 }
 
 .hero .button {
@@ -126,11 +141,8 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    width: 200px;
-    height: 50px;
+    padding: 10px 32px;
     border: 0;
-    font-weight: 700;
-    line-height: 1.88;
     cursor: pointer;
  }
 
