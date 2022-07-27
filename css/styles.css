@@ -2,11 +2,6 @@
 
 /*=====ЗАГАЛЬНІ=====*/
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 :root { 
     --primary-text-color: #757575;
@@ -73,10 +68,17 @@ body {
 
  /*=====ШАПКА=====*/
 
-
 .header {
+    
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-nav {
+    
     background: var(--secondary-accent-color);
     border-bottom: 1px solid var(--border-bottom-color);
+    
 
 }
 
@@ -97,6 +99,7 @@ body {
 
 .site-nav,
 .contacts {
+   
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -125,6 +128,8 @@ body {
 .hero {
     background-color: var(--accent-background-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero .main {
@@ -167,7 +172,10 @@ body {
 
  /*=====ДРУГА СЕКЦІЯ ХАРАКТЕРИСТИКИ=====*/
 
-
+.characteristic {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 
 .characteristic .title {
@@ -186,7 +194,12 @@ body {
 
 
 /*=====ТРЕТЯ СЕКЦІЯ ДІЯЛЬНІСТЬ=====*/
-   
+
+
+.essential {
+    padding-bottom: 94px;
+}   
+
 .essential .title {
     font-size: 36px;
     line-height: 1.17;
@@ -201,7 +214,10 @@ body {
 
 .team {
     background: var(--accent-section-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
 
 .team .title {
     font-size: 36px;
@@ -232,6 +248,9 @@ body {
 
 .footer {
     background-color: var(--accent-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+        
 }
 
 .footer .text {
@@ -266,6 +285,11 @@ body {
 
 
 /*=====ПОРТФОЛІО=====*/
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .portfolio .buttons {
     display: flex;
