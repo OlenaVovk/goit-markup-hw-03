@@ -15,8 +15,10 @@
     --accent-section-color: #F5F4FA;
     --text-footer-color: rgba(255, 255, 255, 0.6);
     --border-bottom-color: #ECECEC;  
+    --border-div-color: #EEEEEE;
     --primary-text-family: Roboto, sans-serif;
     --accent-text-family: Raleway, sans-serif;
+    
 }
 
 body {
@@ -70,13 +72,18 @@ body {
 }
 
 
+section {
+  outline: 3px solid blueviolet;
+}
+
 
  /*=====ШАПКА=====*/
 
-.header {
-    
+.header { 
     padding-top: 24px;
     padding-bottom: 24px;
+
+    outline: 2px solid blueviolet;
 }
 
 .header-container {
@@ -277,6 +284,11 @@ body {
         
 }
 
+.footer-logo {
+    display: inline-block ;
+    margin-bottom: 20px;
+}
+
 .footer .text {
     color: var(--secondary-accent-color);
 }
@@ -291,6 +303,10 @@ body {
     text-decoration: none;
     font-style: normal;
 
+}
+
+.address-list-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer .mail,
@@ -339,14 +355,42 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.example .subtitle {
+.example-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.port-list-item {
+    flex-basis: calc((100% - 90px)/ 3); 
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+
+.example-list .subtitle {
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    margin-top: 0;
+    
+    
+    outline: 2px solid teal;
 }
 
-.example .lists {
+.port-wrapper {
+    border: 1px solid var(--border-div-color);
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.example-list .lists {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
