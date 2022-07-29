@@ -334,8 +334,13 @@ section {
 
 .portfolio .buttons {
     display: flex;
-    text-align: center; 
+    justify-content: center;
+    margin-bottom: 50px;
 } 
+
+.buttons .port-btn-list-item:not(:last-child) {
+    margin-right: 8px;
+}
 
 .buttons .port-btn {
     font-weight: 500;
@@ -344,8 +349,28 @@ section {
     background-color: var(--accent-section-color);
     border-radius: 4px;
     border: 0;
-    height: 38px;
     cursor: pointer;
+    padding: 6px 22px;     
+}
+
+.buttons .button-all {
+    min-width: 74px;
+}
+
+.buttons .button-veb {
+    min-width: 124px;
+}
+
+.buttons .button-app{
+    min-width: 112px;
+}
+
+.buttons .button-des{
+    min-width: 104px;
+}
+
+.buttons .button-mar{
+    min-width: 130px;
 }
 
 .buttons .port-btn:hover,
@@ -370,7 +395,6 @@ section {
 }
 
 .example-list .subtitle {
-
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
