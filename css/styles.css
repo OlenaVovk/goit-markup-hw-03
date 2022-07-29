@@ -28,6 +28,11 @@ body {
     color: var(--primary-text-color);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -243,20 +248,8 @@ body {
 
 
 
-/*=====ТРЕТЯ СЕКЦІЯ ДІЯЛЬНІСТЬ=====*/
-/*=====ЧЕТВЕРТА СЕКЦІЯ КОМАНДА=====*/
+/*=====ТРЕТЯ СЕКЦІЯ ДІЯЛЬНІСТЬ I ЧЕТВЕРТА СЕКЦІЯ КОМАНДА=====*/
 
-
-
-.essential,
-.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-} 
-
-.team {
-    background: var(--accent-section-color);
-}
 
 .essential .images-list,
 .team .team-list {
@@ -275,6 +268,15 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+}
+
+
+
+/*=====ЧЕТВЕРТА СЕКЦІЯ КОМАНДА=====*/
+
+
+.team {
+    background: var(--accent-section-color);
 }
 
 .team .team-list {
@@ -366,11 +368,6 @@ body {
 
 /*=====ПОРТФОЛІО=====*/
 
-
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .portfolio .buttons {
     display: flex;
