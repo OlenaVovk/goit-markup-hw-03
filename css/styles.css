@@ -79,6 +79,8 @@ section {
 
  /*=====ШАПКА=====*/
 
+
+
 .header { 
     padding-top: 24px;
     padding-bottom: 24px;
@@ -97,8 +99,6 @@ section {
     align-items: center;
     background: var(--secondary-accent-color);
     border-bottom: 1px solid var(--border-bottom-color);
-    
-
 }
 
 .logo {
@@ -156,6 +156,8 @@ section {
 
 /*=====ПЕРША СЕКЦІЯ ГЕРОЯ=====*/
 
+
+
 .hero {
     background-color: var(--accent-background-color);
     text-align: center;
@@ -164,7 +166,7 @@ section {
 }
 
 .hero .main {
-
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -172,6 +174,8 @@ section {
     color: var(--secondary-accent-color);
     text-transform: uppercase; 
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 
     outline: 2px solid teal;
@@ -201,13 +205,28 @@ section {
  }
 
 
+
  /*=====ДРУГА СЕКЦІЯ ХАРАКТЕРИСТИКИ=====*/
+
+
 
 .characteristic {
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
+.characteristic .distinction-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.characteristic .dist-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.characteristic .dist-list-container {
+    min-width: 270px;
+    min-height: 98px;
+}
 
 .characteristic .title {
     font-size: 14px;
@@ -225,37 +244,57 @@ section {
 
 
 /*=====ТРЕТЯ СЕКЦІЯ ДІЯЛЬНІСТЬ=====*/
-
-
-.essential {
-    padding-bottom: 94px;
-}   
-
-.essential .title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-}
-
-
-
 /*=====ЧЕТВЕРТА СЕКЦІЯ КОМАНДА=====*/
+
+
+
+.essential,
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+} 
 
 .team {
     background: var(--accent-section-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
+.essential .images-list,
+.team .team-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.essential .images-list {
+    justify-content: space-between;
+}
+
+.essential .title,
 .team .title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+}
+
+.team .team-list {
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.team .team-list-item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.team .team-list-container {
+    background: var(--secondary-accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 .team .people {
@@ -275,13 +314,14 @@ section {
 }
 
 
+
  /*=====ПІДВАЛ САЙТУ=====*/
+
 
 .footer {
     background-color: var(--accent-background-color);
     padding-top: 60px;
-    padding-bottom: 60px;
-        
+    padding-bottom: 60px;      
 }
 
 .footer-logo {
@@ -302,7 +342,6 @@ section {
     color: var(--secondary-accent-color);
     text-decoration: none;
     font-style: normal;
-
 }
 
 .address-list-item:not(:last-child) {
@@ -326,6 +365,7 @@ section {
 
 
 /*=====ПОРТФОЛІО=====*/
+
 
 .portfolio {
     padding-top: 94px;
@@ -391,7 +431,6 @@ section {
     flex-basis: calc((100% - 90px)/ 3); 
     margin-left: 30px;
     margin-top: 30px;
-
 }
 
 .example-list .subtitle {
