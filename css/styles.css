@@ -34,7 +34,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 .list {
@@ -62,7 +62,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 
-    outline: 2px solid teal;
+/* outline: 2px solid teal; */
 }
 
 .invisible {
@@ -72,9 +72,9 @@ body {
 }
 
 
-section {
+/* section {
   outline: 3px solid blueviolet;
-}
+} */
 
 
  /*=====ШАПКА=====*/
@@ -84,8 +84,9 @@ section {
 .header { 
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-bottom-color);
 
-    outline: 2px solid blueviolet;
+    /* outline: 2px solid blueviolet; */
 }
 
 .header-container {
@@ -98,7 +99,6 @@ section {
     display: flex;
     align-items: center;
     background: var(--secondary-accent-color);
-    border-bottom: 1px solid var(--border-bottom-color);
 }
 
 .logo {
@@ -178,7 +178,7 @@ section {
     margin-right: auto;
     margin-bottom: 30px;
 
-    outline: 2px solid teal;
+    /* outline: 2px solid teal; */
   
 }
 
@@ -439,9 +439,8 @@ section {
     letter-spacing: 0.06em;
     margin-bottom: 4px;
     margin-top: 0;
-    
-    
-    outline: 2px solid teal;
+     
+/* outline: 2px solid teal; */
 }
 
 .port-wrapper {
